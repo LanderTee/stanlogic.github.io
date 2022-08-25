@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>Stan逻辑 Stan logic</h3>
+    <p>崩了啊！有辙吗？Shit! Do we have a solution?</p>
+    <button id="btn" onclick="clickText1()">有 Yes</button>
+    <button id="btn2" onclick="clickText2()">没有 No</button>
+    <script>
+      const btn1 = document.getElementById("btn");
+      const btn2 = document.getElementById("btn2");
+      function clickText1() {
+        btn1.innerHTML = "哎呀没事的！It's All Good!";
+        btn2.remove();
+      }
+      function clickText2() {
+        btn2.innerHTML = "没办法的嘛！We can't do anything!";
+        btn1.remove();
+      }
+    </script>
+  </body>
+</html>
